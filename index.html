@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caricamento...</title>
+
     <script>
-        window.location.href = "home/index.html";
+        setTimeout(function() {
+            window.location.href = "home/index.html";
+        }, 500);
     </script>
 </head>
 <body>
-    <p>Se non sei stato portato ancora alla home page, <a href="home/index.html">fai clic qui</a>.</p>
+    <iframe src="loading.html" style="border:none; width:100%; height:100vh;">
+        <p>Se ancora non sei stato portato alla home page, <a href="folder/destination.html">fai clic qui</a>.</p>
+    </iframe>
 </body>
 </html>
